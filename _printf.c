@@ -59,6 +59,8 @@ int (*get_func(char c))(va_list)
 		return (handle_string);
 	else if (c == '%')
 		return (handle_percent);
+	else if (c == 'd' || c == 'i')
+		return (handle_int);
 	else
 		return (NULL);
 }
